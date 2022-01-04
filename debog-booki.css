@@ -42,13 +42,18 @@ i
     font-size: 18px;
 }
 
-a:visited,
 a:hover
 {
     color: #0065FC;
     text-decoration: none;
     outline: none;
     }
+a:visited
+{
+    color: black;
+    text-decoration: none;
+    outline: none;    
+}
 
 h1
 {
@@ -95,9 +100,6 @@ footer
     font-size: 13px;
 }
 
-
-
-/******/
  
 
 
@@ -270,7 +272,7 @@ button i
     display:flex;
     align-items: center;
     gap: 10px;
-}
+    }
 #section_fieldset span i
 {
     height: 45px;
@@ -280,11 +282,264 @@ button i
     display: flex;
     justify-content: center;
     align-items: center;
-}
+    }
+
+/* ********************DEUX SECTIONS********************** */
+/* -------------DEUX SECTIONS GENERALITE ------------------ */
+.alignement_general
+{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    margin:60px 0;
+    width: 100%;
+    min-width: 500px; 
+    }
+
+ /* ******************  ASIDE LES PLUS POPULAIRES ******************** */
+aside
+{
+    display:flex;
+    width:30%;
+    min-width: 320px;
+    flex-wrap: wrap;
+    background-color: #F2F2F2;
+    border-radius: 50px 50px;
+    padding: 3%;
+
+    }
+#populaires
+{
+    width: 100%;
+  }
+/* -------------------VIGNETTES ASIDE-------------- */
+#populaires article
+{
+    display: flex;
+    justify-content: space-between;
+    border: 8px solid white;
+    border-radius: 30px ;
+    max-width: 700px; 
+    min-width:270px;
+    height:180px; 
+    margin:50px auto;
+    box-shadow: 3px 3px 14px 5px #77727254;
+    background-color: white;
+    }
+.populaires_description
+{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+.populaires_images img
+{
+    position: absolute;
+    object-fit: cover;
+    overflow: hidden;
+    height:230px;
+    width: 100%;
+    top:-25%; 
+    }
+.populaires_images
+{
+    width:38%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    border-bottom-left-radius:20px ;
+    border-top-left-radius: 20px; 
+    } 
+/* -----------ASIDE ENTETE----------- */
+#entete_populaire
+{   
+    width: 85%;
+    display:flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-left:5%;
+    }
+#entete_populaire i
+{
+    color: black;
+    font-size:24px;
+    }  
+       
+/*  ****************SECTION HEBERGEMENT******************** */
+#hebergement
+{
+    display: flex;
+    width:100%;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    max-width: 2000px;
+    }
+#section_hebergement
+{
+    width: 63%;
+    max-width: 1500px;
+    min-width: 608px;
+    background-color: #F2F2F2;
+    box-sizing: border-box;
+    border-radius: 30px 30px;
+    padding:3%;
+    }
+/* -----------------HEBERGEMENT VIGNETTES ---------------- */
+#hebergement article
+{
+    display: flex;
+    flex-direction: column;
+    border:8px solid white;
+    border-radius: 30px ;
+    box-shadow: 3px 3px 14px 5px #7772722b;
+    width: 30%; /*495px*/
+    height:270px;
+    margin: 30px 0px;
+    background-color:white;
+    }
+#section_hebergement figure
+{
+    width: 100%; 
+    height: 168px;
+    position: relative;
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin: 0px;
+    }
+#section_hebergement figure img
+{
+    width: 100%;
+    height:168px;
+    object-fit: cover;
+    } 
+.hebergement_description
+{
+    padding-left: 3px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius:20px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    }
 
 
+  /* ******************SECTION ACTIVITES***************** */
+#alignement_activites
+{    
+    display:flex;
+    flex-direction: column;
+    width: 96%;
+    }
+#section_activites
+{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
 
+.activites1,#activites2,#activites4
+{
+    margin: 50px 0;
+    min-width: 350px;
+    width: 23%;
+    }
 
+/* ------------------ACTIVITES VIGNETTES --------------- */
+#section_activites article
+{
+    border-radius: 25px 25px;
+    box-shadow: 3px 3px 14px 5px #7772722b;
+    }
+#section_activites figure
+{
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    position: relative;
+    overflow: hidden;
+    }
+.activites1 figure
+{
+    height:510px;
+    }
+#activites2 article:nth-child(1) figure
+{
+    height:225px ;
+    }
+#activites2 article:nth-child(2) figure
+{
+    height:150px;
+    }
+#activites2 figure:nth-child(2)
+{
+    height: 220px;
+    }
+#activites4 article:nth-child(1) figure
+{
+    height:185px ;
+    }
+#activites4 article:nth-child(2) figure
+{
+    height:190px;
+    }
+
+/* ----------------mise en taille des images---------------- */
+#section_activites img
+{ 
+    position: absolute;
+    border-top-left-radius: 38px;
+    border-top-right-radius: 38px;
+    object-fit: cover;
+    }
+#activites2 article:nth-child(1)
+{
+     margin-bottom: 55px;
+    }
+#activites4 article:nth-child(1)
+{
+    margin-bottom: 56px;
+    }
+#activites_vignette_images1,#activites_vignette_images4
+{
+    width:200%;
+    left:-50%;
+    top: -10%;
+    height:620px;
+    }
+#activites_vignette_images2
+{ 
+    width: 110%;
+    top:-45%;
+    left: -3%;
+    height: 430px; 
+    }
+#activites_vignette_images3
+{
+    width: 116%;
+    left: -15%;
+    top:-25%;
+    height: 300px;
+     }
+#activites_vignette_images5
+{
+    width: 125%;
+    top: -1%;
+    left: -16%;
+    height: 270px;
+    }
+#activites_vignette_images6
+{
+    width: 100%;
+    top:-20%;
+    left: 0%;
+    height: 300px;
+    }
+.activites_description
+{ 
+    height:70px;
+    padding:20px 0px 10px 20px;
+    }
 
 
 /* ************MEDIAQUERIES 992PX *******/                       
@@ -302,7 +557,6 @@ button i
     position: relative;
 }
 header,
-#section_fieldset,
 footer
 {
     padding-top: 30px;
@@ -311,9 +565,8 @@ footer
 #section_hebergement h2,
 #alignement_activites h2 
 {
-    font-size: 40px;
-    margin-left: 40px;
-}
+    font-size: 38px;
+    }
 /* ----------HEADER ---------*/
 header
 {
@@ -357,8 +610,6 @@ button i
 {
     font-weight: 800;
     }
-
-
 #section_fieldset h2
 {
     margin-left: 30px;
@@ -378,8 +629,101 @@ button i
     flex-flow: wrap;
     width:100%;
     }
+/*****************SECTIONS ********** */
 
+/* ----------ASIDE ----------- */
+
+aside 
+{
+    align-items: center;
+    border-radius: inherit;
+    width: 100%;
+    padding: inherit;
+    }
+#entete_populaire i
+{
+    padding-right: 40px;
+    }
+#populaires article
+{
+    width: 500px;
+    }
+
+/* --------------HEBERGEMENT  ET ACTIVITES---------- */
+
+#section_activites
+{
+  border-radius: inherit;
+  justify-content: space-around;
+    }
+#section_hebergement 
+{
+    width:100%;
+    background-color: inherit;
+    padding:inherit;
+    }
+#hebergement article
+{
+    height:350px;
+    border-radius: 23px ;
+    min-width: 350px;
+    margin:  40px auto;
+    border:10px solid white;
+    box-shadow: 3px 3px 14px 5px #77727254;
+    }
+#section_hebergement figure
+{
+    height: 230px;
+    border-top-left-radius: 17px;
+    border-top-right-radius: 17px; 
+    }
+#section_hebergement figure img 
+{
+    width: 165%;
+    height:513px;
+    top:-70%;
+    }
+#section_hebergement img,#section_activites img 
+{
+   position:absolute;
+    } 
+.activites1
+{
+    order:1;   
+    }
+.activites1, #activites2, #activites4
+{
+    margin: inherit;
+    }
+#activites2 article:nth-child(1) figure,
+#activites2 article:nth-child(2) figure,
+#activites4 article:nth-child(1) figure, 
+#activites4 article:nth-child(2) figure,
+#activites1 article figure
+{
+    height: 300px;
+    }
+#section_activites article
+{
+    height:370px;
+    border-radius: 23px ;
+    min-width: 360px;
+    margin:  40px auto;
     
+    box-shadow: 3px 3px 14px 5px #77727254;
+    }
+#section_activites figure 
+{
+    width:100%;
+    height:300px;
+    position: relative;
+    border-top-left-radius: 23px;
+    border-top-right-radius: 23px;
+    }
+#section_activites img 
+{
+    height: 430px;
+    }   
 }
 
 
@@ -420,9 +764,108 @@ fieldset
     position: absolute;
     margin-left: 50%;
     transform: translateX(-43%);
-}
+    }
 .form
 {
     width:60vw;
-}
+    }
+/* ----------ASIDE ------------- */
+#entete_populaire
+{
+   margin-left: inherit;
+   width: 100%;
+    }
+#populaires article  
+{
+    width:90%;
+    min-width:460px;
+    height: 225px;        
+    margin-bottom: 60px;
+    } 
+.populaires_images 
+{
+    width: 45%;
+    height: 370px;
+    }
+.populaires_images img
+{
+    height: 208px;
+    top: inherit;
+    border-bottom-left-radius:23px; 
+    }
+.populaires_description
+{
+    width: 50%;
+    justify-content: space-around;
+    }
+/* ---------SECTIONS ------------ */
+
+#hebergement article,#section_activites article
+{
+    height:370px;
+    width: 90vw;
+    margin:  40px auto;
+    border:10px solid white;
+    box-shadow: 3px 3px 14px 5px #77727254;
+    }
+.activites1, #activites2, #activites4 
+{
+    margin:0 auto ;
+    }
+.activites1
+{
+    order:inherit;
+    }
+#alignement_activites
+{
+    width: 100%;
+
+    }                        
+.hebergement_description
+{
+    line-height: 40px;
+    }                     
+#section_hebergement figure,#activites2 figure,#activites4 figure
+{
+    height: 230px; 
+    } 
+#section_hebergement figure img 
+{
+    width: 103%;
+    }
+#section_activites,#hebergement
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+#section_activites article
+{
+    border:none;
+    }
+.activites1,#activites2,#activites4
+{
+    width: 100%;
+    }
+.activites1 img,#activites2 img,#activites4 img 
+{
+    width: 118%;
+    }
+.etoiles_satisfaction i 
+{
+    font-size: 16px;
+    }
+/* --------------FOOTER ------------- */
+.foot
+{  
+    text-align: left;
+    padding-bottom: 35px;
+    }
+.alignement_footer 
+{
+    display: inherit;
+    width: 100%;
+    }
+    
 }
