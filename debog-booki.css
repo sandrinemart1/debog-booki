@@ -15,11 +15,10 @@ body
     font-weight:400;
     font-size: 16px;
     width: 100%;
-    margin: 100px 0;
 }
 #conteneur
 {
-    margin: 40px auto;
+    margin: 0 auto;
     max-width: 2600px;
     display: flex;
     flex-direction: column;
@@ -106,7 +105,8 @@ header
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 96%;
+    margin:100px 8% 0px 3%;
     }
 header img
 {
@@ -282,7 +282,7 @@ button i
     }
 #section_fieldset
 {
-    padding-left: 50px;
+    padding-left: 3%;
 }
 /* ********************DEUX SECTIONS********************** */
 /* -------------DEUX SECTIONS GENERALITE ------------------ */
@@ -383,7 +383,6 @@ aside
     max-width: 1500px;
     min-width: 608px;
     background-color: #F2F2F2;
-    box-sizing: border-box;
     border-radius: 30px 30px;
     padding:3%;
     }
@@ -568,7 +567,7 @@ footer li
 {
     line-height: 1.8; 
     /* font-size: 33px; */
-    font-family: 'Raleway-SemiBold'serif;
+    font-family: 'Raleway-SemiBold',serif;
     font-weight: lighter;
     color: inherit;
     }
@@ -604,6 +603,7 @@ footer
 }
 header
 {
+    margin: inherit;
     padding-top: 30px;
     padding-left: 30px;
     }
@@ -799,7 +799,7 @@ footer
 {
 body 
 {
-    font-size: 21px;
+    font-size: 27px;
     }
 #conteneur
 {
@@ -810,11 +810,17 @@ h1
     font-size: 35px;
     font-weight: 800;
     padding-left: 20px;
-    }                                  
+    } 
+h3 
+{
+    font-size: 29px;
+    padding-bottom: 10px;
+}                                 
 header ul 
 {
     width: 100%;
     }
+
 /* -------------FIELDSET --------- */
 button 
 {
@@ -827,16 +833,23 @@ button
 #filtres p 
 {
     font-weight: 800;
+    font-size: 26px;
+    padding: 14px 15px 14px 52px;
     }
+#filtres i
+{
+    padding:21px;
+    left:-15px;
+}
 fieldset
 {
     position: absolute;
-    margin-left: 50%;
+    margin-left: 40%;
     transform: translateX(-43%);
     }
 .form
 {
-    width:60vw;
+    min-width: 400px;
     }
 /* ----------ASIDE ------------- */
 .alignement_general
@@ -861,7 +874,6 @@ header,
 #populaires article  
 {
     width:90%;
-    min-width:none;
     height: 225px;        
     margin-bottom: 60px;
     } 
@@ -887,8 +899,7 @@ header,
 {
     height:370px;
     width:90%;
-    margin:  40px inherit;
-    min-width: none;
+    margin:  40px 0;
     border:10px solid white;
     box-shadow: 3px 3px 14px 5px #77727254;
     }
@@ -899,11 +910,7 @@ header,
 .activites1
 {
     order:inherit;
-    }                        
-.hebergement_description
-{
-    line-height: 40px;
-    }                     
+    }                                            
 #section_hebergement figure,#activites2 figure,#activites4 figure
 {
     height: 230px; 
