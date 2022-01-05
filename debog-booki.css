@@ -79,13 +79,10 @@ span
 {  
     font-weight:700;
     }
-header,
-#section_fieldset,
-footer
+header
 {
-    padding-top: 40px;
-    padding-left: 40px;
-    }
+    padding:50px;   
+ }
 .etoiles_satisfaction
 {
     display: flex;
@@ -283,7 +280,10 @@ button i
     justify-content: center;
     align-items: center;
     }
-
+#section_fieldset
+{
+    padding-left: 50px;
+}
 /* ********************DEUX SECTIONS********************** */
 /* -------------DEUX SECTIONS GENERALITE ------------------ */
 .alignement_general
@@ -292,21 +292,23 @@ button i
     flex-wrap:wrap;
     justify-content: space-around;
     margin:60px 0;
-    width: 100%;
-    min-width: 500px; 
+    width: 100%; 
     }
 
  /* ******************  ASIDE LES PLUS POPULAIRES ******************** */
-aside
-{
-    display:flex;
-    width:30%;
+.alignement_populaire
+{   width:30%;
     min-width: 320px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     background-color: #F2F2F2;
     border-radius: 50px 50px;
     padding: 3%;
+    }
 
+aside
+{
+    display:flex;
+    flex-wrap: wrap;
     }
 #populaires
 {
@@ -385,6 +387,15 @@ aside
     border-radius: 30px 30px;
     padding:3%;
     }
+#section_hebergement p span
+{
+    font-size: 20px;
+}
+#section_hebergement> p
+{
+    padding-top: 30px;
+    padding-left: 40px;
+}
 /* -----------------HEBERGEMENT VIGNETTES ---------------- */
 #hebergement article
 {
@@ -494,11 +505,11 @@ aside
     }
 #activites2 article:nth-child(1)
 {
-     margin-bottom: 55px;
+     margin-bottom: 65px;
     }
 #activites4 article:nth-child(1)
 {
-    margin-bottom: 56px;
+    margin-bottom: 67px;
     }
 #activites_vignette_images1,#activites_vignette_images4
 {
@@ -540,6 +551,41 @@ aside
     height:70px;
     padding:20px 0px 10px 20px;
     }
+/*  *****************FOOTER***************  */
+ .alignement_footer
+{
+    display: inline-flex;
+    width: 100%;
+    padding-left: 30px;
+    }
+footer ul
+{   list-style: none;
+    padding-left: 0px;
+    display: inline;
+    flex-direction: column;
+    }
+footer li
+{
+    line-height: 1.8; 
+    /* font-size: 33px; */
+    font-family: 'Raleway-SemiBold'serif;
+    font-weight: lighter;
+    color: inherit;
+    }
+.foot
+{
+    width: 85%;
+    }
+footer h3
+{
+    margin-bottom: 40px;
+    }
+footer
+{
+    background-color: #F2F2F2;
+    padding-top: 40px;
+    padding-bottom: 40px;
+} 
 
 
 /* ************MEDIAQUERIES 992PX *******/                       
@@ -549,23 +595,24 @@ aside
 
 #conteneur
 { 
-    width: 100%;
-    margin:0 auto;
+    
+    justify-content: inherit;
     }
 #section_fieldset
 {
     position: relative;
 }
-header,
-footer
+header
 {
     padding-top: 30px;
     padding-left: 30px;
     }
 #section_hebergement h2,
-#alignement_activites h2 
+#alignement_activites h2,
+#entete_populaire h2 
 {
     font-size: 38px;
+    padding-left: 6%;
     }
 /* ----------HEADER ---------*/
 header
@@ -586,7 +633,7 @@ header li:hover
 {
     border-top: none;
 }
-ul a:visited,ul a:hover
+ul a:hover
 {
     border-bottom: 4px solid rgb(0,101,255,1);
     color:rgb(0,101,255,1);
@@ -632,12 +679,14 @@ button i
 /*****************SECTIONS ********** */
 
 /* ----------ASIDE ----------- */
-
-aside 
+.alignement_general
 {
-    align-items: center;
-    border-radius: inherit;
+    flex-wrap: wrap-reverse;
+}
+.alignement_populaire
+{
     width: 100%;
+    border-radius: inherit;
     padding: inherit;
     }
 #entete_populaire i
@@ -651,7 +700,8 @@ aside
 
 /* --------------HEBERGEMENT  ET ACTIVITES---------- */
 
-#section_activites
+#section_activites,
+#hebergement
 {
   border-radius: inherit;
   justify-content: space-around;
@@ -667,7 +717,7 @@ aside
     height:350px;
     border-radius: 23px ;
     min-width: 350px;
-    margin:  40px auto;
+    margin:  40px 17px;
     border:10px solid white;
     box-shadow: 3px 3px 14px 5px #77727254;
     }
@@ -709,7 +759,6 @@ aside
     border-radius: 23px ;
     min-width: 360px;
     margin:  40px auto;
-    
     box-shadow: 3px 3px 14px 5px #77727254;
     }
 #section_activites figure 
@@ -723,7 +772,23 @@ aside
 #section_activites img 
 {
     height: 430px;
-    }   
+    }
+
+/* ----------FOOTER -------- */
+footer
+{
+    display:inherit;
+
+
+    }
+.foot
+{
+    padding-right: inherit;
+    }
+.alignement_footer
+{
+    margin: inherit;
+}    
 }
 
 
@@ -736,6 +801,10 @@ body
 {
     font-size: 21px;
     }
+#conteneur
+{
+    align-items: inherit;
+}
 h1 
 {
     font-size: 35px;
@@ -770,6 +839,20 @@ fieldset
     width:60vw;
     }
 /* ----------ASIDE ------------- */
+.alignement_general
+{
+    width: inherit;
+    justify-content: inherit;
+}
+.alignement_populaire,
+#section_hebergement,
+#alignement_activites,
+footer,
+header,
+#section_fieldset
+{
+    min-width: 800px;
+}
 #entete_populaire
 {
    margin-left: inherit;
@@ -778,7 +861,7 @@ fieldset
 #populaires article  
 {
     width:90%;
-    min-width:460px;
+    min-width:none;
     height: 225px;        
     margin-bottom: 60px;
     } 
@@ -803,8 +886,9 @@ fieldset
 #hebergement article,#section_activites article
 {
     height:370px;
-    width: 90vw;
-    margin:  40px auto;
+    width:90%;
+    margin:  40px inherit;
+    min-width: none;
     border:10px solid white;
     box-shadow: 3px 3px 14px 5px #77727254;
     }
@@ -815,11 +899,6 @@ fieldset
 .activites1
 {
     order:inherit;
-    }
-#alignement_activites
-{
-    width: 100%;
-
     }                        
 .hebergement_description
 {
@@ -833,13 +912,7 @@ fieldset
 {
     width: 103%;
     }
-#section_activites,#hebergement
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    }
+
 #section_activites article
 {
     border:none;
@@ -857,6 +930,10 @@ fieldset
     font-size: 16px;
     }
 /* --------------FOOTER ------------- */
+ footer 
+{
+    width: 105%;
+}
 .foot
 {  
     text-align: left;
@@ -865,7 +942,7 @@ fieldset
 .alignement_footer 
 {
     display: inherit;
-    width: 100%;
+    padding-left: 50px;
     }
-    
+     
 }
