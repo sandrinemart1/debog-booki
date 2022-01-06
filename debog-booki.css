@@ -214,7 +214,6 @@ button i
 {
     display: flex;
     justify-content: flex-start;
-    flex-flow: wrap;
     align-items: center; 
     }
 #filtres p
@@ -251,13 +250,22 @@ button i
     top:-1px;
     padding: 18px;
     }
-.petit
+#filtres p:nth-child(1)
 {
-    max-width: 180px;  
+    flex-basis:200px ;
 }
-.grand
+#filtres p:nth-child(2)
 {
-    min-width: 245px;
+    flex-basis:180px ;
+}
+#filtres p:nth-child(3)
+{
+    flex-basis:195px ;
+}
+#filtres p:nth-child(4)
+{
+    flex-basis:255px ;
+    flex-shrink: 0;
 }
 #filtres h2
 {
@@ -652,6 +660,15 @@ button i
 {
     visibility:visible;
     }
+/* .form 
+{
+    flex-grow: 1;
+    min-width: 85vw;
+    }
+fieldset
+{
+    padding-left:40px
+ } */
 
 #nom_de_ville
 {
@@ -674,8 +691,13 @@ button i
 #filtres
 {
     flex-flow: wrap;
-    width:100%;
+    width:80%;
     }
+#filtres p:nth-child(4)
+ {
+    flex-basis: 315px;
+    flex-shrink: 0;
+}
 /*****************SECTIONS ********** */
 
 /* ----------ASIDE ----------- */
@@ -845,11 +867,11 @@ fieldset
 {
     position: absolute;
     margin-left: 40%;
-    transform: translateX(-43%);
+    transform: translateX(-37%);
     }
 .form
 {
-    min-width: 400px;
+    min-width: 500px;
     }
 /* ----------ASIDE ------------- */
 .alignement_general
