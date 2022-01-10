@@ -1,6 +1,4 @@
-   
-
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap');
 
 *
 {
@@ -12,8 +10,8 @@
 body
 {
     font-family: 'Raleway',Verdana,sans-serif;
-    font-weight:400;
-    font-size: 16px;
+    font-weight:500;
+    font-size: 20px;
     width: 100%;
 }
 #conteneur
@@ -25,14 +23,13 @@ body
     justify-content: center;
     align-items: flex-start;
     }
-a,
-i
+a
 {
     color:black;
     text-decoration: none;
     display:block;
     cursor: pointer;
-    transition:.4s;
+    transition:.3s;
     }
 i
 {
@@ -40,37 +37,35 @@ i
     color:#0065FC;
     font-size: 18px;
 }
-
-a:hover
-{
-    color: #0065FC;
-    text-decoration: none;
-    outline: none;
-    }
 a:visited
 {
     color: black;
     text-decoration: none;
     outline: none;    
 }
-
+a:hover
+{
+    color: #0065FC;
+    text-decoration: none;
+    outline: none;
+    }
 h1
 {
 
-    font-size: 25px;
+    font-size: 30px;
     letter-spacing: -0.3px;
-    font-weight: 800;
+    font-weight: 700;
     margin-bottom: 20px;
+    margin-right: 20px;
     }
 h2
 {
-    font-size:23px;
-    font-weight:700;
-    padding-top: 30px;
+    font-size:25px;
+    font-weight:800;
     }
 h3
 {
-    font-size: 19px;     
+    font-size: 21px;     
     font-weight: 800;
     padding-top: 5px;
     }
@@ -78,10 +73,6 @@ span
 {  
     font-weight:700;
     }
-header
-{
-    padding:50px;   
- }
 .etoiles_satisfaction
 {
     display: flex;
@@ -96,8 +87,6 @@ header
     font-size: 13px;
 }
 
- 
-
 
 /* ********************* header ******************** */
 header
@@ -105,8 +94,9 @@ header
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 96%;
-    margin:100px 8% 0px 3%;
+    width: 95%;
+    max-width: 2050px;
+    padding:50px;
     }
 header img
 {
@@ -126,7 +116,13 @@ header li:hover
 {
     border-top:2px solid blue;
     }
+.centrage
+{
+    display:flex;
+    text-align: center;
+    margin: 50px auto 0px;
 
+}
      
 /*  ************************FIELDSET*****************   */
 /* ---------------------FIELDSET FORMULAIRE -------------- */
@@ -146,9 +142,9 @@ fieldset i
     background-color: #F2F2F2;
     border:1px solid #F2F2F2;
     border:none;
-    border-bottom-left-radius: 15px 15px;
-    border-top-left-radius: 15px 15px;
-    padding: 19px; 
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    padding: 20px; 
     }    
 .form .entree
 {
@@ -168,7 +164,7 @@ fieldset i
 form
 {
     padding-left: 10px;
-    border:2px solid #F2F2F2;  
+    border:3px solid #F2F2F2;  
     }
 
 button
@@ -196,11 +192,11 @@ button i
 {
     background-color: #0065FC;
     color: white;
-    border-radius: 25%; 
-    padding:18px;
+    border-radius: 15px 15px; 
+    padding:20px;
     position:absolute;
-    top:-2px;
-    left:-4px;
+    top:-3px;
+    left:-10px;
     visibility: hidden; 
     }
 
@@ -209,6 +205,7 @@ button i
 {
     display: flex;
     align-items: baseline;
+    flex-wrap: wrap;
     }
 #filtres
 {
@@ -221,14 +218,15 @@ button i
     display: flex;
     justify-content: start;
     align-items: center;
-    margin:30px 25px;
+    margin:30px 20px;
     border:2px solid #bab8b891;
     border-radius: 60px 60px;
     text-transform: capitalize;
-    padding: 14px 15px 14px 45px;
+    padding: 14px 15px 14px 55px;
     position: relative;
-    font-size:20px;  
+    font-size:22px;  
     font-weight:700;
+    letter-spacing: -0.5px;
     transition: 0.4s;  
      }
 
@@ -246,25 +244,25 @@ button i
     background-color:#c8e3fdfa;
     border-radius: 50%;
     position: absolute;
-    left: -13px;
-    top:-1px;
-    padding: 18px;
+    left: -12px;
+    top:-2px;
+    padding: 20px;
     }
 #filtres p:nth-child(1)
 {
-    flex-basis:200px ;
+    flex-basis:215px ;
 }
 #filtres p:nth-child(2)
 {
-    flex-basis:180px ;
+    flex-basis:195px ;
 }
 #filtres p:nth-child(3)
 {
-    flex-basis:195px ;
+    flex-basis:215px ;
 }
 #filtres p:nth-child(4)
 {
-    flex-basis:255px ;
+    flex-basis:305px ;
     flex-shrink: 0;
 }
 #filtres h2
@@ -292,6 +290,7 @@ button i
 {
     padding-left: 3%;
 }
+
 /* ********************DEUX SECTIONS********************** */
 /* -------------DEUX SECTIONS GENERALITE ------------------ */
 .alignement_general
@@ -300,16 +299,18 @@ button i
     flex-wrap:wrap;
     justify-content: space-around;
     margin:60px 0;
-    width: 100%; 
+    width: 100%;
+    max-width: 2150px; 
     }
 
  /* ******************  ASIDE LES PLUS POPULAIRES ******************** */
 .alignement_populaire
-{   width:30%;
+{   
+    width:30%;
     min-width: 320px;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     background-color: #F2F2F2;
-    border-radius: 50px 50px;
+    border-radius: 30px 30px;
     padding: 3%;
     }
 
@@ -338,10 +339,11 @@ aside
     }
 .populaires_description
 {
-    width: 55%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
+    width: 55%;
+    margin: 5px 20px;
     }
 .populaires_images img
 {
@@ -374,8 +376,8 @@ aside
 {
     color: black;
     font-size:24px;
-    }  
-       
+    }
+    
 /*  ****************SECTION HEBERGEMENT******************** */
 #hebergement
 {
@@ -412,7 +414,7 @@ aside
     border-radius: 30px ;
     box-shadow: 3px 3px 14px 5px #7772722b;
     width: 30%; /*495px*/
-    height:270px;
+    height:280px;
     margin: 30px 0px;
     background-color:white;
     }
@@ -434,16 +436,15 @@ aside
     } 
 .hebergement_description
 {
-    padding-left: 3px;
+    padding-left: 5px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius:20px ;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     }
-
-
-  /* ******************SECTION ACTIVITES***************** */
+    
+/* ******************SECTION ACTIVITES***************** */
 #alignement_activites
 {    
     display:flex;
@@ -512,7 +513,7 @@ aside
     }
 #activites2 article:nth-child(1)
 {
-     margin-bottom: 65px;
+    margin-bottom: 65px;
     }
 #activites4 article:nth-child(1)
 {
@@ -538,7 +539,7 @@ aside
     left: -15%;
     top:-25%;
     height: 300px;
-     }
+    }
 #activites_vignette_images5
 {
     width: 125%;
@@ -559,7 +560,7 @@ aside
     padding:20px 0px 10px 20px;
     }
 /*  *****************FOOTER***************  */
- .alignement_footer
+.alignement_footer
 {
     display: inline-flex;
     width: 100%;
@@ -573,11 +574,7 @@ footer ul
     }
 footer li
 {
-    line-height: 1.8; 
-    /* font-size: 33px; */
-    font-family: 'Raleway-SemiBold',serif;
-    font-weight: lighter;
-    color: inherit;
+    line-height: 1.8;
     }
 .foot
 {
@@ -594,21 +591,33 @@ footer
     padding-bottom: 40px;
 } 
 
+/* ************mediaqueries 1460px********* */
 
-/* ************MEDIAQUERIES 992PX *******/                       
-@media all  and (max-width:992px)
+@media (min-width:992px)  and (max-width:1460px) 
 {
+h3 
+{
+    font-size: 18px;
+    }
+.populaires_description,
+.hebergement_description,
+#section_hebergement p span
+{
+    font-size: 16px;
+    }
+.populaires_description
+{
+    margin:5px;
+}   
+}
 
-
+/* *********mediaqueries 992px ******* */                     
+@media (max-width:992px)
+{
 #conteneur
 { 
-    
     justify-content: inherit;
     }
-#section_fieldset
-{
-    position: relative;
-}
 header
 {
     margin: inherit;
@@ -621,6 +630,7 @@ header
 {
     font-size: 38px;
     padding-left: 6%;
+    padding-top: 40px;
     }
 /* ----------HEADER ---------*/
 header
@@ -635,7 +645,7 @@ header ul
     }
 header a 
 {
-    padding:20px; 
+    padding:30px 50px; 
     }
 header li:hover
 {
@@ -651,7 +661,7 @@ header img
     width:125px;
     }
 /* --------------FIELDSET ------------- */
-
+ 
 button 
 {
     visibility:collapse;
@@ -660,20 +670,15 @@ button i
 {
     visibility:visible;
     }
-/* .form 
-{
-    flex-grow: 1;
-    min-width: 85vw;
-    }
-fieldset
-{
-    padding-left:40px
- } */
 
 #nom_de_ville
 {
     font-weight: 800;
     }
+fieldset
+{
+    padding:40px;
+}
 #section_fieldset h2
 {
     margin-left: 30px;
@@ -683,24 +688,29 @@ fieldset
 {
     margin-left: 30px;
     }
+fieldset i
+{
+    border-top-left-radius: 15px 15px;
+    font-size:20px ;
+    padding:20px; 
+    } 
 #alignement_filtres
 {
     display:inherit;
-    padding-top: 125px;
+    padding-top: 50px;
 }
 #filtres
 {
     flex-flow: wrap;
     width:80%;
     }
-#filtres p:nth-child(4)
- {
-    flex-basis: 315px;
-    flex-shrink: 0;
-}
 /*****************SECTIONS ********** */
 
 /* ----------ASIDE ----------- */
+aside 
+{
+    width: 100%;
+}
 .alignement_general
 {
     flex-wrap: wrap-reverse;
@@ -721,7 +731,6 @@ fieldset
     }
 
 /* --------------HEBERGEMENT  ET ACTIVITES---------- */
-
 #section_activites,
 #hebergement
 {
@@ -737,7 +746,7 @@ fieldset
 #hebergement article
 {
     height:350px;
-    border-radius: 23px ;
+    border-radius: 35px ;
     min-width: 350px;
     margin:  40px 17px;
     border:10px solid white;
@@ -746,8 +755,8 @@ fieldset
 #section_hebergement figure
 {
     height: 230px;
-    border-top-left-radius: 17px;
-    border-top-right-radius: 17px; 
+    border-top-left-radius: 23px;
+    border-top-right-radius: 23px; 
     }
 #section_hebergement figure img 
 {
@@ -778,7 +787,7 @@ fieldset
 #section_activites article
 {
     height:370px;
-    border-radius: 23px ;
+    border-radius: 35px ;
     min-width: 360px;
     margin:  40px auto;
     box-shadow: 3px 3px 14px 5px #77727254;
@@ -795,29 +804,27 @@ fieldset
 {
     height: 430px;
     }
+#section_hebergement p span {
+    font-size: 24px;
+} 
 
 /* ----------FOOTER -------- */
-footer
-{
-    display:inherit;
-
-
-    }
 .foot
 {
     padding-right: inherit;
     }
-.alignement_footer
+footer li 
 {
-    margin: inherit;
-}    
-}
+    font-size: 18px;
+    }
+    
+} 
 
 
 
 /* *************************MEDIAQUERIES 768PX ************ */
 
-@media all and (max-width:768px)
+@media (max-width:768px)
 {
 body 
 {
@@ -826,6 +833,7 @@ body
 #conteneur
 {
     align-items: inherit;
+    min-width: 820px;
 }
 h1 
 {
@@ -865,14 +873,24 @@ button
 }
 fieldset
 {
-    position: absolute;
-    margin-left: 40%;
-    transform: translateX(-37%);
+   margin:20px auto 0px;
     }
+fieldset i 
+{ 
+    font-size: 30px;
+    padding:26px;
+    top:-14px;
+    left:-12px;
+}
 .form
 {
     min-width: 500px;
     }
+.form .entree
+{
+    height: 75px;
+    font-size: 28px; 
+}    
 /* ----------ASIDE ------------- */
 .alignement_general
 {
@@ -886,22 +904,25 @@ footer,
 header,
 #section_fieldset
 {
-    min-width: 800px;
-}
+    min-width: 820px;
+} 
 #entete_populaire
 {
    margin-left: inherit;
    width: 100%;
-    }
+}
 #populaires article  
 {
+    border-radius: 35px;
     width:90%;
     height: 225px;        
     margin-bottom: 60px;
-    } 
+} 
 .populaires_images 
 {
     width: 45%;
+    border-bottom-left-radius: 27px;
+    border-top-left-radius: 27px;
     height: 370px;
     }
 .populaires_images img
@@ -916,18 +937,17 @@ header,
     justify-content: space-around;
     }
 /* ---------SECTIONS ------------ */
-
 #hebergement article,#section_activites article
 {
-    height:370px;
+    height:385px;
     width:90%;
-    margin:  40px 0;
     border:10px solid white;
     box-shadow: 3px 3px 14px 5px #77727254;
     }
 .activites1, #activites2, #activites4 
 {
     margin:0 auto ;
+    width:100%
     }
 .activites1
 {
@@ -959,10 +979,7 @@ header,
     font-size: 16px;
     }
 /* --------------FOOTER ------------- */
- footer 
-{
-    width: 105%;
-}
+
 .foot
 {  
     text-align: left;
@@ -970,8 +987,10 @@ header,
     }
 .alignement_footer 
 {
-    display: inherit;
+    display: flex;
+    flex-direction: column;
     padding-left: 50px;
     }
-     
+    
 }
+    
