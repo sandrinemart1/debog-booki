@@ -169,8 +169,8 @@ form{
     background-color: transparent;
     }
 .button2 {
-   display:none; 
-    }  
+   display:none;
+    } 
 
 /* ----------------FIELDSET FILTRES-----------------------*/
 #alignement_filtres{
@@ -572,6 +572,9 @@ header img {
     }
 .centrage_fieldset .button2 {
     display:block;
+    background-color: transparent;
+    outline:none;
+    border:none;
     }
 .centrage_fieldset .button2 i {
     color: white;
